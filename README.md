@@ -6,35 +6,31 @@ This project is a real-time sentiment analysis system built using Streamlit and 
 
 ## Features
 
-- Real-time text preprocessing and sentiment classification  
-- Utilizes Gemma 1B model for advanced language understanding  
-- Interactive dashboard built with Streamlit  
-- Clustering of negative messages to detect common concerns  
-- Real-time notifications for key representative phrases  
-- Upload custom CSVs or connect to a Twitter scraper for live analysis
+- **Real-time Analysis**: Performs text preprocessing and sentiment classification on live data.
+- **Advanced Model**: Utilizes the Gemma 1B model for advanced language understanding and high-accuracy sentiment detection.
+- **Interactive Dashboard**: Built with Streamlit for an intuitive and responsive user interface.
+- **Negative Message Clustering**: Groups similar negative messages to identify common themes and critical concerns.
+- **Real-time Notifications**: Sends alerts with key representative phrases from critical clusters.
+- **Flexible Data Input**: Supports uploading custom CSV files or connecting to a Twitter scraper for live analysis.
 
 ---
 
 ## Model Used
 
-- Gemma-1B (Google’s open-source language model)  
-- Loaded using a custom wrapper in `sentiment_model.py`  
-- Prompted for 3-class sentiment classification: Positive, Neutral, Negative
+- **Model**: Gemma-1B (Google’s open-source language model).
+- **Implementation**: Loaded using a custom wrapper in `sentiment_model.py`.
+- **Task**: Prompted for 3-class sentiment classification: **Positive**, **Neutral**, and **Negative**.
 
 ---
 
-## Project Structure
+## Installation and Usage
 
-Real-Time-Sentiment-Dashboard/
-├── app.py # Main Streamlit app
-├── sample_sentiment_dataset.csv # Sample input
-├── sentiment_model.py # Gemma 1B based sentiment logic
-├── prepocess.py # Text preprocessing logic
-├── csv_deleter.py # Removes previous output CSVs
-├── emotion_detection.py # (Optional) Emotion classifier
-├── phrase_extractor.py # Extracts representative phrases
-├── SentenceClustering.py # Clusters similar negative messages
-├── ntfy.py # Sends real-time alerts via ntfy
-├── runner.py # Pipeline runner
-├── run_twitter_scraper.py # Twitter scraping (HT parameterized)
-├── requirements.txt # Python dependencies
+### 1. Prerequisites
+
+Ensure you have Python 3.x installed.
+
+### 2. Clone the Repository
+
+```bash
+git clone <your-repository-url>
+cd Real-Time-Sentiment-Dashboard
